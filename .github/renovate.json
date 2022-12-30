@@ -2,7 +2,7 @@
   "extends": [
     "config:base"
   ],
-  "schedule": ["*/10 * * * *"],
+  "schedule": ["every minute"],
   "timezone": "Europe/Berlin",
   "regexManagers": [
     {

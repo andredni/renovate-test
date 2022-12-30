@@ -6,6 +6,16 @@
       "github>renovatebot/.github"
     ],
     "prCreation": "immediate",
+    "enabledManagers": [
+        "regex"
+        ],
+    "packageRules": [
+        {
+            "managers": [
+            "regex"
+            ]
+        }
+    ],
     "regexManagers": [
       {
         "fileMatch": ["main.yaml"],

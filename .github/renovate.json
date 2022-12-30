@@ -6,7 +6,7 @@
     ],
     "regexManagers": [
       {
-        "fileMatch": ["roles/chart1/tasks/main.yaml"],
+        "fileMatch": ["main.yaml"],
         "matchStringsStrategy": "combination",
         "matchStrings": ["^\\s+chart_repo_url:(\\s+)?(?<registryUrl>.*?)\\nchart_ref:(\\s+)?(?<depName>.*?)\\nchart_version:(\\s+)?(?<currentValue>.*?)"],
         "datasourceTemplate": "helm"

@@ -1,0 +1,6 @@
+---
+
+- name: "Mega geiler renovate kram"
+  hosts: localhost
+  roles:
+    - chart1

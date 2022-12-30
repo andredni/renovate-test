@@ -1,27 +1,31 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": [
-      "config:base",
-      ":dependencyDashboard",
-      "github>renovatebot/.github"
-    ],
-    "prCreation": "immediate",
-    "enabledManagers": [
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":dependencyDashboard",
+    "github>renovatebot/.github"
+  ],
+  "prCreation": "immediate",
+  "enabledManagers": [
+    "regex"
+  ],
+  "packageRules": [
+    {
+      "matchManagers": [
         "regex"
-        ],
-    "packageRules": [
-        {
-            "managers": [
-            "regex"
-            ]
-        }
-    ],
-    "regexManagers": [
-      {
-        "fileMatch": ["main.yaml"],
-        "matchStringsStrategy": "combination",
-        "matchStrings": ["^\\s+chart_repo_url:(\\s+)?(?<registryUrl>.*?)\\nchart_ref:(\\s+)?(?<depName>.*?)\\nchart_version:(\\s+)?(?<currentValue>.*?)"],
-        "datasourceTemplate": "helm"
-      }
-    ]
-  }
+      ]
+    }
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": [
+        "main.yaml"
+      ],
+      "matchStringsStrategy": "combination",
+      "matchStrings": [
+        "^\\s+chart_repo_url:(\\s+)?(?<registryUrl>.*?)\\nchart_ref:(\\s+)?(?<depName>.*?)\\nchart_version:(\\s+)?(?<currentValue>.*?)"
+      ],
+      "datasourceTemplate": "helm"
+    }
+  ]
+}

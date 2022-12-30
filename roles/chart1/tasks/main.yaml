@@ -9,3 +9,11 @@
     release_namespace: "default"
     update_repo_cache: true
 
+- name: "install memcache"
+  kubernetes.core.helm:
+    name: "nginx"
+    chart_repo_url: https://charts.bitnami.com/bitnami
+    chart_ref: memcached
+    chart_version: 6.3.0
+    release_namespace: "default"
+    update_repo_cache: true

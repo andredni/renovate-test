@@ -4,7 +4,6 @@
   ],
   "schedule": ["* * * * *"],
   "timezone": "Europe/Berlin",
-  "labels": ["renovate"],
   "regexManagers": [
     {
       "fileMatch": ["\\.yaml$"],

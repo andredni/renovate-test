@@ -20,7 +20,7 @@
       "fileMatch": [
         "main.yaml"
       ],
-      "matchStringsStrategy": "combination",
+      "matchStringsStrategy": "any",
       "matchStrings": [
         "^\\s+chart_repo_url:(\\s+)?(?<registryUrl>.*?)\\nchart_ref:(\\s+)?(?<depName>.*?)\\nchart_version:(\\s+)?(?<currentValue>.*?)"
       ],

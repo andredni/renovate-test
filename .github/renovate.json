@@ -1,30 +1,20 @@
 {
   "extends": [
-    "config:base",
-    ":dependencyDashboard",
-    "github>renovatebot/.github"
+    "config:base"
   ],
   "prCreation": "immediate",
-  "enabledManagers": [
-    "regex"
-  ],
-  "packageRules": [
-    {
-      "matchManagers": [
-        "regex"
-      ]
-    }
-  ],
   "regexManagers": [
     {
-      "fileMatch": [
-        "main.yaml"
-      ],
-      "matchStringsStrategy": "any",
+      "fileMatch": ["\\.yaml$"],
       "matchStrings": [
         "^\\s+chart_repo_url:(\\s+)?(?<registryUrl>.*?)\\nchart_ref:(\\s+)?(?<depName>.*?)\\nchart_version:(\\s+)?(?<currentValue>.*?)"
       ],
       "datasourceTemplate": "helm"
     }
-  ]
+  ],
+  "packageRules": [{
+    "datasources": ["helm"],
+    "managers": ["regex"],
+    "registryUrls": ["https://charts.bitnami.com/bitnami"]
+  }]
 }

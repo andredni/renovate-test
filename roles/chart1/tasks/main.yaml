@@ -17,3 +17,7 @@
     chart_version: 6.3.5
     release_namespace: "default"
     update_repo_cache: true
+
+- name: debug is all
+  debug:
+    msg: "Hello World"

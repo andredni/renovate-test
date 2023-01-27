@@ -5,7 +5,7 @@
     name: "nginx"
     chart_repo_url: https://charts.bitnami.com/bitnami
     chart_ref: nginx
-    chart_version: 13.2.21
+    chart_version: 13.2.22
     release_namespace: "default"
     update_repo_cache: true
 

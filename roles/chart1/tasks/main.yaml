@@ -1,6 +1,6 @@
 ---
 
-- name: "install nginx"
+- name: Install nginx
   kubernetes.core.helm:
     name: "nginx"
     chart_repo_url: https://charts.bitnami.com/bitnami
@@ -9,7 +9,7 @@
     release_namespace: "default"
     update_repo_cache: true
 
-- name: "install memcache"
+- name: Install memcache
   kubernetes.core.helm:
     name: "nginx"
     chart_repo_url: https://charts.bitnami.com/bitnami
@@ -17,3 +17,7 @@
     chart_version: 6.3.5
     release_namespace: "default"
     update_repo_cache: true
+
+- name: Debug is all
+  ansible.builtin.debug:
+    msg: "Hello World 1g"

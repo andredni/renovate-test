@@ -18,6 +18,6 @@
     release_namespace: "default"
     update_repo_cache: true
 
-- name: Debug is all
+- name: debug is all
   ansible.builtin.debug:
     msg: "Hello World 1g"

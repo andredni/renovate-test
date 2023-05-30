@@ -8,17 +8,7 @@
       "matchUpdateTypes": ["minor", "patch", "major"],
       "automerge": true,
       "automergeType": "pr",
-      "prConcurrentLimit": 1,
-      "labels": ["renovate"],
-      "schedule": ["after 9am"],
-      "groupName": "renovate",
-      "dependencyDashboardApproval": false
-    },
-    {
-      "matchPackagePatterns": ["memcached"],
-      "matchUpdateTypes": ["minor", "patch", "major"],
-      "automerge": true,
-      "automergeType": "pr",
+      "platformAutomerge": true,
       "prConcurrentLimit": 1,
       "labels": ["renovate"],
       "schedule": ["after 9am"],

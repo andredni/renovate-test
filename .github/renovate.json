@@ -9,7 +9,7 @@
       "automerge": true,
       "automergeType": "pr",
       "prConcurrentLimit": 1,
-      "labels": ["dependencies", "renovate"],
+      "labels": ["renovate"],
       "schedule": ["after 9am"],
       "groupName": "renovate",
       "dependencyDashboardApproval": false
@@ -20,7 +20,7 @@
       "automerge": true,
       "automergeType": "pr",
       "prConcurrentLimit": 1,
-      "labels": ["dependencies", "renovate"],
+      "labels": ["renovate"],
       "schedule": ["after 9am"],
       "groupName": "renovate",
       "dependencyDashboardApproval": false

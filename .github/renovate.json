@@ -15,7 +15,8 @@
       "labels": ["dependencies"],
       "schedule": ["after 9am"],
       "groupName": "renovate",
-      "dependencyDashboardApproval": false
+      "dependencyDashboardApproval": false,
+      "prAssigneeFilter": "none"
     }
   ],
   "regexManagers": [

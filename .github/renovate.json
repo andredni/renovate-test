@@ -2,6 +2,22 @@
   "extends": [
     "config:base"
   ],
+  "labels": [
+    "renovate"
+  ],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["nginx"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true,
+      "automergeType": "pr",
+      "prConcurrentLimit": 1,
+      "labels": ["dependencies"],
+      "schedule": ["after 9am"],
+      "groupName": "renovate",
+      "dependencyDashboardApproval": false
+    }
+  ],
   "regexManagers": [
     {
       "fileMatch": ["\\.yaml$"],

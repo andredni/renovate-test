@@ -8,7 +8,18 @@
   "packageRules": [
     {
       "matchPackagePatterns": ["nginx"],
-      "matchUpdateTypes": ["minor", "patch"],
+      "matchUpdateTypes": ["minor", "patch", "major"],
+      "automerge": true,
+      "automergeType": "pr",
+      "prConcurrentLimit": 1,
+      "labels": ["dependencies"],
+      "schedule": ["after 9am"],
+      "groupName": "renovate",
+      "dependencyDashboardApproval": false
+    },
+    {
+      "matchPackagePatterns": ["memcached"],
+      "matchUpdateTypes": ["minor", "patch", "major"],
       "automerge": true,
       "automergeType": "pr",
       "prConcurrentLimit": 1,

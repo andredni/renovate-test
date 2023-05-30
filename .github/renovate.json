@@ -7,7 +7,7 @@
       "matchPackagePatterns": ["nginx", "apache2"],
       "matchUpdateTypes": ["minor", "patch", "major"],
       "automerge": true,
-      "automergeType": "branch",
+      "automergeType": "pr",
       "prConcurrentLimit": 1,
       "labels": ["renovate"],
       "schedule": ["after 9am"],

@@ -7,7 +7,7 @@
   ],
   "packageRules": [
     {
-      "matchPackagePatterns": ["nginx"],
+      "matchPackagePatterns": ["nginx", "apache2"],
       "matchUpdateTypes": ["minor", "patch", "major"],
       "automerge": true,
       "automergeType": "pr",
